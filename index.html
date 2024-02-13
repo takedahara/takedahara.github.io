@@ -255,5 +255,22 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const portfolioBoxes = document.querySelectorAll('.portfolio-box');
+          
+              portfolioBoxes.forEach(box => {
+                box.addEventListener('click', function (event) {
+                  event.preventDefault(); // デフォルトのクリック動作をキャンセル
+          
+                  const link = this.querySelector('a');
+                  const url = link.href;
+          
+                  // URLに移動
+                  window.location.href = url;
+                });
+              });
+            });
+          </script>
     </body>
 </html>
