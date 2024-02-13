@@ -10993,3 +10993,18 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+
+/* フェードイン */
+.fadein {
+  opacity : 0;
+  transform : translate(0, 200px);
+  transition:all 0.8s;
+  display:block;
+  margin:60px auto;
+  text-align:center;
+}
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}
